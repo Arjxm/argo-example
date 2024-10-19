@@ -1,6 +1,3 @@
-Here’s an updated `README.md` that includes instructions for deploying the NGINX application using Argo CD in addition to the Kustomize setup:
-
-```md
 # NGINX Deployment with Kustomize and Argo CD
 
 This repository contains Kustomize configuration files to deploy an NGINX server on a Kubernetes cluster. It also includes instructions to deploy the configuration using **Argo CD** for GitOps-based continuous deployment.
@@ -156,17 +153,4 @@ Feel free to modify the configuration files to suit your needs:
 - Modify resource requests and limits.
 - Update service types or ports in `service.yaml`.
 
-After making changes, commit the updates to your Git repository, and Argo CD will automatically apply the changes to your Kubernetes cluster.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
-
-### Key Sections Added for Argo CD:
-- **Argo CD Installation**: Instructions to install and access Argo CD.
-- **Creating an Argo CD Application**: CLI commands to create an Argo CD application for the NGINX deployment.
-- **Syncing and Monitoring**: Steps to sync the application with the repository and monitor changes.
-- **Automatic Sync**: Explanation of automated sync between Git changes and Kubernetes deployment.
-
-This `README.md` should now help users deploy NGINX using both Kustomize and Argo CD with GitOps.
