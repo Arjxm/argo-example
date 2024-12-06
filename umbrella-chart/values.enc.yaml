@@ -1,13 +1,3 @@
-service-a:
-    replicaCount: 2
-    image:
-        repository: nginx
-        tag: 1.21.1
-service-b:
-    replicaCount: 2
-    image:
-        repository: nginx
-        tag: 1.21.1
 sops:
     kms: []
     gcp_kms: []
