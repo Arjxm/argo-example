@@ -1,0 +1,33 @@
+service-a:
+    replicaCount: 2
+    image:
+        repository: nginx
+        tag: 1.21.1
+service-b:
+    replicaCount: 2
+    image:
+        repository: nginx
+        tag: 1.21.1
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age: []
+    lastmodified: "2024-12-06T11:20:09Z"
+    mac: ENC[AES256_GCM,data:IjXvScaW3ByE5iXtIo6MRao39RtOEGmXx3pP+Zpony1xh9zMV0BB5EjymvUlLsHkUMAWA8K0HSGNNYh8Xm966MS6ugK+JWFA1rOr4BYR51ncCcjjYA4As/ncN9xf6kDb+Se4xea+fgIz4hJL34iKU6Lru5qxkxAGJ9gqxSh65cI=,iv:1i564zRlZ1/LnFP4OiQ9ZE6HQdknT5tsVxTVXP5JW4A=,tag:6tjWLfvR5vA7ZkJjRwJ0/g==,type:str]
+    pgp:
+        - created_at: "2024-12-06T11:20:09Z"
+          enc: |-
+            -----BEGIN PGP MESSAGE-----
+
+            hF4D44dpIBrLmrwSAQdAHC2trAHtiwl3GK+nekg1BOMGd1U0tmG2X09to/5CD38w
+            e9cIJhN8k5qmlvgAoQMFKdWjHcmx3mSE1m+fhGAWJTNEjlNfCS6v/+AzJMOSfMoF
+            1GgBCQIQfUGYjrY8EetbEbJZPb5+dzRTGSH5+m4cfD0kD5bJUkcvma80Q1Ypo1xd
+            aq24AJfHdRIkO4bRASXpgToUxHWsgxsl2V1XUYWRrhw5oFBozdHKw+2u9G0B42BE
+            UALsgiPsXzgHxw==
+            =1YK1
+            -----END PGP MESSAGE-----
+          fp: CF043E8A48EE957DB6A6043703DCD663959B56A9
+    encrypted_regex: ^(data|string)$
+    version: 3.9.2
